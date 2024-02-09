@@ -2,44 +2,82 @@
 <html>
     <head>
         <title>HTML tutorial</title>
-        <style>
-            table, th, td {
-                border: 1px solid black;
-                border-collapse: collapse;
-            }
-        </style>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <h1>HTML Tutorial</h1>
-        <p>Welcome to sleepcat's HTML Tutorial. Happy to learning!</p>
-        <h2>Tag and Attribute</h2>
+        <p>Welcome to sleepcat's HTML Tutorial. Happy to learn!</p>
+        <h2>Tag</h2>
         <table>
             <tr>
                 <th>Tag</th>
                 <th>Common Attributes</th>
                 <th>Example</th>
+                <th>Additional information</th>
             </tr>
             <tr>
                 <td><code>&lt;body&gt;</code></td>
                 <td rowspan="3">
-                    style(font-size, font-family, backgroud-color, color, text-align)
+                    <a href="attribute/attr_style.html">style</a>
                 </td>
                 <td rowspan="3">
                     <p style="font-size:20px; font-family: Arial; background-color: powderblue; color: blueviolet;">Hello!</p>
-                    <p><code>&lt;p style="font-size:20px; font-family: Arial; background-color: powderblue; color: blueviolet;"&gt;Hello!&lt;/p&gt;</code></p>
+                    <code>&lt;p style="font-size:20px; font-family: Arial; background-color: powderblue; color: blueviolet;"&gt;Hello!&lt;/p&gt;</code>
                 </td>
             </tr>
             <tr>
                 <td><code>&lt;h1&gt; ~ &lt;h6&gt;</code></td>
+                <td>By default:<br><code>h1: 2em, h2: 1.5em, h3: 1.17em<br>h4: 1em, h5: 0.83em, h6: 0.67em</code></td>
             </tr>
             <tr>
                 <td><code>&lt;p&gt;</code></td>
+                <td>Default size is <code>1em = 16px</code></td>
             </tr>
                 <td><code>&lt;b&gt;, &lt;i&gt;, &lt;mark&gt;, &lt;del&gt;, &lt;ins&gt;, &lt;sup&gt;, &lt;sub&gt;</code></td>
                 <td>NONE</td>
-                <td>test</td>
+                <td>
+                    <code>
+                        origin: test, &lt;b&gt;: <b>test</b>, &lt;i&gt;: <i>test</i>, &lt;mark&gt;: <mark>test</mark><br>&lt;del&gt;: <del>test</del>, &lt;sup&gt;: tes<sup>t</sup>, &lt;sub&gt;: tes<sub>t</sub>
+                    </code>
+                </td>
+                <td></td>
             </tr>
-            
+            <tr>
+                <td><code>&lt;br&gt;, &lt;hr&gt;</code></td>
+                <td>NONE</td>
+                <td>
+                    <code>&lt;br&gt;: </code><br>te<br>st<br>
+                    <code>&lt;hr&gt;: </code><br>te<hr>st
+                </td>
+                <td>Only to have one tag when be used.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;!-- -- &gt;</code></td>
+                <td>NONE</td>
+                <td><!-- test --></td>
+                <td>The comment would not show in browser</td>
+            </tr>
+            <tr>
+                <td><code>&lt;a&gt;</code></td>
+                <td>href, title, <a href="attribute/attr_target.html">target</a></td>
+                <td>
+                    <a href="index.html" target="_blank" title="Link to homepage">test</a><br>
+                    <code>&lt;a href="index.html" target="_blank" title="Link to homepage"&gt;link to homepage&lt;/a&gt;</code>
+                </td>
+                <td>If we replace "link to homepage" to <code>&lt;img&gt;</code>, than we can use an image as a link</td>
+            </tr>
         </table>
+        <h2>CSS</h2>
+        <p>CSS can be added to HTML in 3 different ways:</p>
+        <li>
+            <b>Inline</b> - using style attribute
+        </li>
+        <li>
+            <b>Internal</b> - using <code>&lt;style&gt;</code> in <code>&lt;head&gt;</code>
+        </li>
+        <li>
+            <b>External</b> - using <code>&lt;link&gt;</code> to link to an external CSS file
+        </li>
+
     </body>
 </html>
