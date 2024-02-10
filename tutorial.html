@@ -3,11 +3,14 @@
     <head>
         <title>HTML tutorial</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="images/favicon.ico">
     </head>
     <body>
         <h1>HTML Tutorial</h1>
         <p>Welcome to sleepcat's HTML Tutorial. Happy to learn!</p>
-        <h2>Tag</h2>
+        <a href="#Tag">Link to Tag</a>
+        <a href="#CSS">Link to CSS</a>
+        <h2 id="Tag">Tag</h2>
         <table>
             <tr>
                 <th>Tag</th>
@@ -18,7 +21,7 @@
             <tr>
                 <td><code>&lt;body&gt;</code></td>
                 <td rowspan="3">
-                    <a href="attribute/attr_style.html">style</a>
+                    <a href="attribute/attr_style.html">style</a>, id
                 </td>
                 <td rowspan="3">
                     <p style="font-size:20px; font-family: Arial; background-color: powderblue; color: blueviolet;">Hello!</p>
@@ -64,10 +67,105 @@
                     <a href="index.html" target="_blank" title="Link to homepage">test</a><br>
                     <code>&lt;a href="index.html" target="_blank" title="Link to homepage"&gt;link to homepage&lt;/a&gt;</code>
                 </td>
-                <td>If we replace "link to homepage" to <code>&lt;img&gt;</code>, than we can use an image as a link</td>
+                <td>If we replace "link to homepage" to <code>&lt;img&gt;</code>, then we can use an image as a link.</td>
+            </tr>
+            <tr>
+                <td><code>&lt;img&gt;</code></td>
+                <td>
+                    src, alt, style, <a href="attribute/attr_usemap.html">usemap</a>
+                </td>
+                <td>
+                    <img src="https://dena.gr/wp-content/uploads/2022/12/testing.jpg" alt="test not foung"><br>
+                    <code>&lt;img src="https://dena.gr/wp-content/uploads/2022/12/testing.jpg" alt="test not foung"&gt;</code>
+                </td>
+                <td>
+                    "alt" attribute only apprear when the "src" cannot be found.<br>
+                </td>
+            </tr>
+            <tr>
+                <td><code>&lt;map&gt;</code></td>
+                <td><a href="attribute/attr_usemap.html">name</a></td>
+                <td rowspan="2">
+                    <img src="images/3fruits.jpg" usemap="#3fruits" style="width:200px; height:200px;">
+                    <map name="3fruits">
+                        <area shape="poly" href="fruits/banana.html" alt="banana" coords="39,14,38,30,33,45,36,57,51,81,73,94,104,99,132,94,154,83,167,69,170,56,162,48,117,63,96,62,81,56,53,27,51,18,53,10,45,9,40,11">
+                        <area shape="circle" href="fruits/cherry.html" alt="cherry" coords="33,150,20">
+                        <area shape="circle" href="fruits/cherry.html" alt="cherry" coords="75,155,17">
+                        <area shape="circle" href="fruits/apple.html" alt="apple" coords="146,148,40">
+                    </map><br>
+                    <code>
+                        &lt;img src="images/3fruits.jpg" usemap="#3fruits" style="width:200px;height: 200px;"&gt;<br>
+                        &lt;map name="3fruits"&gt;<br>
+                            &nbsp;&nbsp;&lt;area shape="poly" href="fruits/banana.html" alt="banana" coords="39,14,38,30,33,45,36,57,51,81,73,94,104,99,132,94,154,83,167,69,170,56,162,48,117,63,96,62,81,56,53,27,51,18,53,10,45,9,40,11"&gt;<br>
+                            &nbsp;&nbsp;&lt;area shape="circle" href="fruits/cherry.html" alt="cherry" coords="33,150,20"&gt;<br>
+                            &nbsp;&nbsp;&lt;area shape="circle" href="fruits/cherry.html" alt="cherry" coords="75,155,17"&gt;<br>
+                            &nbsp;&nbsp;&lt;area shape="circle" href="fruits/apple.html" alt="apple" coords="146,148,40"&gt;<br>
+                        &lt;/map&gt;<br>
+                    </code>
+                </td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <td><code>&lt;area&gt;</code></td>
+                <td>
+                    <a href="attribute/attr_shape.html">shape</a>, coords, href, alt
+                </td>
+            </tr>
+            <tr>
+                <td><code>&lt;link&gt;</code></td>
+                <td>
+                    <a href="attribute/attr_rel.html">rel</a>, href
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><code>&lt;title&gt;</code></td>
+                <td>NONE</code></td>
+                <td></td>
+                <td>Define the title of the document</td>
+            </tr>
+            <tr>
+                <td><code>&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</code></td>
+                <td>rowspan, colspan, same as <code>&lt;p&gt;</td>
+                <td>
+                    <table>
+                        <tr>
+                            <th>One</th>
+                            <th>Two</th>
+                            <th>Three</th>    
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                    </table>
+                    <code>
+                        &lt;table&gt;<br>
+                        &nbsp;&nbsp;&lt;tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;One&lt;/th&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Two&lt;/th&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Three&lt;/th&gt;<br>
+                        &nbsp;&nbsp;&lt;/tr&gt;<br>
+                        &nbsp;&nbsp;&lt;tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;1&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;2&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;3&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&lt;/tr&gt;<br>
+                        &lt;/table&gt;<br>
+                    </code>
+                </td>
+                <td>
+                    <a href="use_element/table.html">Use table</a>
+                </td>
+                <td>
+                    
+                </td>
             </tr>
         </table>
-        <h2>CSS</h2>
+        
+        <h2 id="CSS">CSS</h2>
         <p>CSS can be added to HTML in 3 different ways:</p>
         <li>
             <b>Inline</b> - using style attribute
@@ -79,5 +177,38 @@
             <b>External</b> - using <code>&lt;link&gt;</code> to link to an external CSS file
         </li>
 
+        <h3>Different way to use link</h3>
+        <h4>Change the color of links</h4>
+        <p>Link has 4 different states:</p>
+        <ul>
+            <li>
+                <b>a:link</b> - unvisited link
+            </li>
+            <li>
+                <b>a:visited</b> - visited link
+            </li>
+            <li>
+                <b>a:hover</b> - when mouse point to the link
+            </li>
+            <li>
+                <b>a:active</b> - active link
+            </li>
+        </ul>
+
+        <h4>Change link to a button</h4>
+        <p>We can have the below button by using code:</p>
+        <code>
+            a:link, a:visited {<br>
+                background-color: red;<br>
+                color: white;<br>
+                padding: 15px 25px;<br>
+                text-align: center;<br>
+                text-decoration: none;<br>
+                display: inline-block;<br>
+            }<br>
+            a:hover, a:active {<br>
+                background-color: pink;<br>
+            }
+        </code>
     </body>
 </html>

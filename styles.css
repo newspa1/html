@@ -2,6 +2,9 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
+tr:hover {
+    background-color: whitesmoke;
+}
 h1 {
     font-family: Verdana;
     color: red;
@@ -9,4 +12,24 @@ h1 {
 h2 {
     font-family: Verdana;
     color: blue;
+}
+a:link {
+    color: rgb(7, 7, 171);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(87, 22, 177);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(7, 7, 171);
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
 }

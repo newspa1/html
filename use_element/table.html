@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+    <title>HTML tutorial</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Element - table, tr, th and td</h1>
+    <h2>Basic form of table:</h2>
+    <p>
+        <table>
+            <tr>
+                <th>One</th>
+                <th>Two</th>
+                <th>Three</th>    
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </table>
+        <code>
+            &lt;table&gt;<br>
+            &nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;One&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Two&lt;/th&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Three&lt;/th&gt;<br>
+            &nbsp;&nbsp;&lt;/tr&gt;<br>
+            &nbsp;&nbsp;&lt;tr&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;1&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;2&lt;/td&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;3&lt;/td&gt;<br>
+            &nbsp;&nbsp;&lt;/tr&gt;<br>
+            &lt;/table&gt;<br>
+        </code>
+        <h2>Table with CSS</h2>
+        <p>
+            border - add a border<br>
+            <code>&nbsp;&nbsp;border: 1 solid black;</code><br>
+            border-collapse - avoid having double borders<br>
+            <code>&nbsp;&nbsp;border-collapse: collapse</code><br>
+            border-radius - the borders get round corners:<br>
+            <code>&nbsp;&nbsp;border-radius: 10px</code><br>
+            border-style - set the appearance of the border<br>
+            <code>&nbsp;&nbsp;border-style: dotted</code><br>
+            border-color - set the color of the border<br>
+            <code>&nbsp;&nbsp;border-color: red</code><br>
+            border-spacing - set the space between table cells<br>
+            <code>&nbsp;&nbsp;border-spacing: 15px</code>
+            padding - add padding on table cells<br>
+            <code>&nbsp;&nbsp;padding: 15px</code><br>
+        </p>
+        <h3>Make zebra stripes</h3>
+        <p>To make the zebra stripes in the table, we can use below 3 element:</p>
+        <ul>
+            <li>
+                tr:nth-child(even/odd) - horizontal stripes
+            </li>
+            <li>
+                th:nth-child(even/odd) and td:nth-child(even/odd) - vertical stripes
+            </li>
+        </ul>
+        <h2>Use "colgroup" element in the table</h2>
+        <p>We can use <code>&lt;colgroup&gt;</code> to define multiple column in the same style by using <code>&lt;col&gt;</code> element inside.</p>
+        <table>
+            <colgroup>
+                <col span="2">
+                <col span="3" style="background-color: aqua;">
+            </colgroup>
+            <tr>
+                <th>SUN</th>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>Wed</th>
+                <th>THU</th>
+                <th>FRI</th>
+                <th>SAT</th>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+            </tr>
+        </table>
+        <p>Only "width", "visibility", "background" and "border" can be used in <code>&lt;col&gt;</code></p>
+    </p>
+</body>
