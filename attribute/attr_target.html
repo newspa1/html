@@ -5,19 +5,33 @@
 </head>
 <body>
     <h1>Attribute - target</h1>
-    <p>
-        <b>Common use:</b><br>
-        <li>
-            <b>_self</b> - open in the same window
-        </li>
-        <li>
-            <b>_blank</b> - open in a new window
-        </li>
-        <li>
-            <b>_parent</b> - open in the parent frame
-        </li>
-        <li>
-            <b>_top</b> - open in the full body of the window
-        </li>
-    </p>
+    <div>
+        <div>
+            <h2>Common use:</h2>
+            <div>
+                <li>
+                    <b>_self</b> - open in the same window
+                </li>
+                <li>
+                    <b>_blank</b> - open in a new window
+                </li>
+                <li>
+                    <b>_parent</b> - open in the parent frame
+                </li>
+                <li>
+                    <b>_top</b> - open in the full body of the window
+                </li>
+            </div>
+        </div>
+        <div>
+            <h2 id="iframe_method">Use with <code>&lt;iframe&gt;</code>:</h2>
+            <p>We can change iframe's context with link</p><br>
+            <div>
+                <iframe src="/index.html" name="iframe_change" title="test" style="width:800px; height:400px"></iframe><br>
+                <a href="/index.html", target="iframe_change">index.html</a>
+                <a href="/tutorial.html", target="iframe_change">tutorial.html</a>
+            </div>
+        </div>
+        </p>
+    </div>
 </body>
