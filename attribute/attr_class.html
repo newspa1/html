@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title>HTML tutorial</title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        .test {
+            color: red;
+            background-color: black;
+        }
+        .test2 {
+            font-family: Cochin;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Attribute - class</h1>
+    <div>
+        <p>Attribute "class" is very very important. It can point to a class name in a style sheet.</p>
+    </div>
+    <div>
+        <h2>How to use class</h2>
+        <div>
+            <div>
+                <p>Like attribute style, class can write in the <code>&lt;style&gt;</code> element, or can write in external style sheet.</p>
+                <p>
+                    First step: define a class with "." character<br>
+                    <code>
+                        .test {<br>
+                        &nbsp;&nbsp;color: white;<br>
+                        &nbsp;&nbsp;background-color: black<br>
+                        }
+                    </code>
+                </p>
+            </div>
+            <div>
+                <p>Then use "class" attribute in some element like <code>&lt;p&gt;</code> and <code>&lt;h1&gt;</code><br></p>
+                <p class="test">Hello!</p>
+                <code>
+                    &lt;p class="test"&gt;Hello!&lt;/p&gt;
+                </code>
+            </div>
+            <div>
+                <p>If we want to use multiple classes, we can use classes with space seperate</p>
+                <p class="test test2">Hello!</p>
+                <code>
+                    &lt;p class="test test2"&gt;Hello!&lt;/p&gt;
+                </code>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>Different between class and id</h2>
+        <p>A class name can be used by multiple element, but an id only can be used by one element</p>
+    </div>
+</body>

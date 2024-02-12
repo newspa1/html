@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <title>HTML tutorial</title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        #test {
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Attribute - id</h1>
+    <div>
+        <p>Attribute "id" specifies a unique id for an element. We can not have more than one element with same id in HTML</p>
+    </div>
+    <div>
+        <h2>How to use id</h2>
+        <div>
+            <div>
+                <p id="test">First step: define an id with "#" character<br>
+                    <code>
+                        #test {<br>
+                        &nbsp;&nbsp;color: white;<br>
+                        &nbsp;&nbsp;background-color: black<br>
+                        }
+                    </code>
+                </p>
+            </div>
+            <div>
+                <p>Then use "id" attribute in some element like <code>&lt;p&gt;</code> and <code>&lt;h1&gt;</code><br></p>
+                    <p id="test">Hello!</p>
+                    <code>
+                        &lt;p id="test"&gt;Hello!&lt;/p&gt;
+                    </code>
+                </p>
+            </div>
+        </div>
+        <div>
+            <h3>id bookmark</h3>
+            <p>
+                we can use id as a bookmark by creating a link with a character "#" in href attribute.<br>
+                <a href="#test">Click me to teleport to id="test"</a><br>
+                <code>
+                    &gt;a href="#test"&lt;Click me to teleport to id="test"&lt;/a&gt;
+                </code>
+            </p>
+        </div>
+    </div>
+    <div>
+        <h2>Different between class and id</h2>
+        <p>A class name can be used by multiple element, but an id only can be used by one element</p>
+    </div>
+</body>

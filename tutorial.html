@@ -6,209 +6,278 @@
         <link rel="icon" href="images/favicon.ico">
     </head>
     <body>
-        <h1>HTML Tutorial</h1>
-        <p>Welcome to sleepcat's HTML Tutorial. Happy to learn!</p>
-        <a href="#Tag">Link to Tag</a>
-        <a href="#CSS">Link to CSS</a>
-        <h2 id="Tag">Tag</h2>
-        <table>
-            <tr>
-                <th>Tag</th>
-                <th>Common Attributes</th>
-                <th>Example</th>
-                <th>Additional information</th>
-            </tr>
-            <tr>
-                <td><code>&lt;body&gt;</code></td>
-                <td rowspan="3">
-                    <a href="attribute/attr_style.html">style</a>, id
-                </td>
-                <td rowspan="3">
-                    <p style="font-size:20px; font-family: Arial; background-color: powderblue; color: blueviolet;">Hello!</p>
-                    <code>&lt;p style="font-size:20px; font-family: Arial; background-color: powderblue; color: blueviolet;"&gt;Hello!&lt;/p&gt;</code>
-                </td>
-            </tr>
-            <tr>
-                <td><code>&lt;h1&gt; ~ &lt;h6&gt;</code></td>
-                <td>By default:<br><code>h1: 2em, h2: 1.5em, h3: 1.17em<br>h4: 1em, h5: 0.83em, h6: 0.67em</code></td>
-            </tr>
-            <tr>
-                <td><code>&lt;p&gt;</code></td>
-                <td>Default size is <code>1em = 16px</code></td>
-            </tr>
-                <td><code>&lt;b&gt;, &lt;i&gt;, &lt;mark&gt;, &lt;del&gt;, &lt;ins&gt;, &lt;sup&gt;, &lt;sub&gt;</code></td>
-                <td>NONE</td>
-                <td>
-                    <code>
-                        origin: test, &lt;b&gt;: <b>test</b>, &lt;i&gt;: <i>test</i>, &lt;mark&gt;: <mark>test</mark><br>&lt;del&gt;: <del>test</del>, &lt;sup&gt;: tes<sup>t</sup>, &lt;sub&gt;: tes<sub>t</sub>
-                    </code>
-                </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td><code>&lt;br&gt;, &lt;hr&gt;</code></td>
-                <td>NONE</td>
-                <td>
-                    <code>&lt;br&gt;: </code><br>te<br>st<br>
-                    <code>&lt;hr&gt;: </code><br>te<hr>st
-                </td>
-                <td>Only to have one tag when be used.</td>
-            </tr>
-            <tr>
-                <td><code>&lt;!-- -- &gt;</code></td>
-                <td>NONE</td>
-                <td><!-- test --></td>
-                <td>The comment would not show in browser</td>
-            </tr>
-            <tr>
-                <td><code>&lt;a&gt;</code></td>
-                <td>href, title, <a href="attribute/attr_target.html">target</a></td>
-                <td>
-                    <a href="index.html" target="_blank" title="Link to homepage">test</a><br>
-                    <code>&lt;a href="index.html" target="_blank" title="Link to homepage"&gt;link to homepage&lt;/a&gt;</code>
-                </td>
-                <td>If we replace "link to homepage" to <code>&lt;img&gt;</code>, then we can use an image as a link.</td>
-            </tr>
-            <tr>
-                <td><code>&lt;img&gt;</code></td>
-                <td>
-                    src, alt, style, <a href="attribute/attr_usemap.html">usemap</a>
-                </td>
-                <td>
-                    <img src="https://dena.gr/wp-content/uploads/2022/12/testing.jpg" alt="test not foung"><br>
-                    <code>&lt;img src="https://dena.gr/wp-content/uploads/2022/12/testing.jpg" alt="test not foung"&gt;</code>
-                </td>
-                <td>
-                    "alt" attribute only apprear when the "src" cannot be found.<br>
-                </td>
-            </tr>
-            <tr>
-                <td><code>&lt;map&gt;</code></td>
-                <td><a href="attribute/attr_usemap.html">name</a></td>
-                <td rowspan="2">
-                    <img src="images/3fruits.jpg" usemap="#3fruits" style="width:200px; height:200px;">
-                    <map name="3fruits">
-                        <area shape="poly" href="fruits/banana.html" alt="banana" coords="39,14,38,30,33,45,36,57,51,81,73,94,104,99,132,94,154,83,167,69,170,56,162,48,117,63,96,62,81,56,53,27,51,18,53,10,45,9,40,11">
-                        <area shape="circle" href="fruits/cherry.html" alt="cherry" coords="33,150,20">
-                        <area shape="circle" href="fruits/cherry.html" alt="cherry" coords="75,155,17">
-                        <area shape="circle" href="fruits/apple.html" alt="apple" coords="146,148,40">
-                    </map><br>
-                    <code>
-                        &lt;img src="images/3fruits.jpg" usemap="#3fruits" style="width:200px;height: 200px;"&gt;<br>
-                        &lt;map name="3fruits"&gt;<br>
-                            &nbsp;&nbsp;&lt;area shape="poly" href="fruits/banana.html" alt="banana" coords="39,14,38,30,33,45,36,57,51,81,73,94,104,99,132,94,154,83,167,69,170,56,162,48,117,63,96,62,81,56,53,27,51,18,53,10,45,9,40,11"&gt;<br>
-                            &nbsp;&nbsp;&lt;area shape="circle" href="fruits/cherry.html" alt="cherry" coords="33,150,20"&gt;<br>
-                            &nbsp;&nbsp;&lt;area shape="circle" href="fruits/cherry.html" alt="cherry" coords="75,155,17"&gt;<br>
-                            &nbsp;&nbsp;&lt;area shape="circle" href="fruits/apple.html" alt="apple" coords="146,148,40"&gt;<br>
-                        &lt;/map&gt;<br>
-                    </code>
-                </td>
-                <td rowspan="2"></td>
-            </tr>
-            <tr>
-                <td><code>&lt;area&gt;</code></td>
-                <td>
-                    <a href="attribute/attr_shape.html">shape</a>, coords, href, alt
-                </td>
-            </tr>
-            <tr>
-                <td><code>&lt;link&gt;</code></td>
-                <td>
-                    <a href="attribute/attr_rel.html">rel</a>, href
-                </td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td><code>&lt;title&gt;</code></td>
-                <td>NONE</code></td>
-                <td></td>
-                <td>Define the title of the document</td>
-            </tr>
-            <tr>
-                <td><code>&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</code></td>
-                <td>rowspan, colspan, same as <code>&lt;p&gt;</td>
-                <td>
-                    <table>
-                        <tr>
-                            <th>One</th>
-                            <th>Two</th>
-                            <th>Three</th>    
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                        </tr>
-                    </table>
-                    <code>
-                        &lt;table&gt;<br>
-                        &nbsp;&nbsp;&lt;tr&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;One&lt;/th&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Two&lt;/th&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Three&lt;/th&gt;<br>
-                        &nbsp;&nbsp;&lt;/tr&gt;<br>
-                        &nbsp;&nbsp;&lt;tr&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;1&lt;/td&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;2&lt;/td&gt;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;3&lt;/td&gt;<br>
-                        &nbsp;&nbsp;&lt;/tr&gt;<br>
-                        &lt;/table&gt;<br>
-                    </code>
-                </td>
-                <td>
-                    <a href="use_element/table.html">Use table</a>
-                </td>
-                <td>
-                    
-                </td>
-            </tr>
-        </table>
+        <div>
+            <h1>HTML Tutorial</h1>
+            <div>
+                <p>Welcome to sleepcat's HTML Tutorial. Happy to learn!</p>
+            </div>
+            <div>
+                <a href="#Tag">Link to Tag</a>
+                <a href="#CSS">Link to CSS</a>
+            </div>
+            <div>
+                <h2 id="Tag">Tag</h2>
+                <table>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Common Attributes</th>
+                        <th>Example</th>
+                        <th>Additional information</th>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;body&gt;</code></td>
+                        <td rowspan="3">
+                            <a href="attribute/attr_style.html">style</a>, id
+                        </td>
+                        <td rowspan="3">
+                            <p style="font-size:20px; font-family: Arial; background-color: powderblue; color: blueviolet;">Hello!</p>
+                            <code>&lt;p style="font-size:20px; font-family: Arial; background-color: powderblue; color: blueviolet;"&gt;Hello!&lt;/p&gt;</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;h1&gt; ~ &lt;h6&gt;</code></td>
+                        <td>By default:<br><code>h1: 2em, h2: 1.5em, h3: 1.17em<br>h4: 1em, h5: 0.83em, h6: 0.67em</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;p&gt;</code></td>
+                        <td>Default size is <code>1em = 16px</code></td>
+                    </tr>
+                        <td><code>&lt;b&gt;, &lt;i&gt;, &lt;mark&gt;, &lt;del&gt;, &lt;ins&gt;, &lt;sup&gt;, &lt;sub&gt;</code></td>
+                        <td>NONE</td>
+                        <td>
+                            <code>
+                                origin: test, &lt;b&gt;: <b>test</b>, &lt;i&gt;: <i>test</i>, &lt;mark&gt;: <mark>test</mark><br>&lt;del&gt;: <del>test</del>, &lt;sup&gt;: tes<sup>t</sup>, &lt;sub&gt;: tes<sub>t</sub>
+                            </code>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;br&gt;, &lt;hr&gt;</code></td>
+                        <td>NONE</td>
+                        <td>
+                            <code>&lt;br&gt;: </code><br>te<br>st<br>
+                            <code>&lt;hr&gt;: </code><br>te<hr>st
+                        </td>
+                        <td>Only to have one tag when be used.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;!-- -- &gt;</code></td>
+                        <td>NONE</td>
+                        <td><!-- test --></td>
+                        <td>The comment would not show in browser</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;a&gt;</code></td>
+                        <td>href, title, <a href="attribute/attr_target.html">target</a></td>
+                        <td>
+                            <a href="index.html" target="_blank" title="Link to homepage">test</a><br>
+                            <code>&lt;a href="index.html" target="_blank" title="Link to homepage"&gt;link to homepage&lt;/a&gt;</code>
+                        </td>
+                        <td>If we replace "link to homepage" to <code>&lt;img&gt;</code>, then we can use an image as a link.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;img&gt;</code></td>
+                        <td>
+                            src, alt, style, <a href="attribute/attr_usemap.html">usemap</a>
+                        </td>
+                        <td>
+                            <img src="https://dena.gr/wp-content/uploads/2022/12/testing.jpg" alt="test not foung"><br>
+                            <code>&lt;img src="https://dena.gr/wp-content/uploads/2022/12/testing.jpg" alt="test not foung"&gt;</code>
+                        </td>
+                        <td>
+                            "alt" attribute only apprear when the "src" cannot be found.<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;map&gt;</code></td>
+                        <td><a href="attribute/attr_usemap.html">name</a></td>
+                        <td rowspan="2">
+                            <img src="images/3fruits.jpg" usemap="#3fruits" style="width:200px; height:200px;">
+                            <map name="3fruits">
+                                <area shape="poly" href="fruits/banana.html" alt="banana" coords="39,14,38,30,33,45,36,57,51,81,73,94,104,99,132,94,154,83,167,69,170,56,162,48,117,63,96,62,81,56,53,27,51,18,53,10,45,9,40,11">
+                                <area shape="circle" href="fruits/cherry.html" alt="cherry" coords="33,150,20">
+                                <area shape="circle" href="fruits/cherry.html" alt="cherry" coords="75,155,17">
+                                <area shape="circle" href="fruits/apple.html" alt="apple" coords="146,148,40">
+                            </map><br>
+                            <code>
+                                &lt;img src="images/3fruits.jpg" usemap="#3fruits" style="width:200px;height: 200px;"&gt;<br>
+                                &lt;map name="3fruits"&gt;<br>
+                                    &nbsp;&nbsp;&lt;area shape="poly" href="fruits/banana.html" alt="banana" coords="39,14,38,30,33,45,36,57,51,81,73,94,104,99,132,94,154,83,167,69,170,56,162,48,117,63,96,62,81,56,53,27,51,18,53,10,45,9,40,11"&gt;<br>
+                                    &nbsp;&nbsp;&lt;area shape="circle" href="fruits/cherry.html" alt="cherry" coords="33,150,20"&gt;<br>
+                                    &nbsp;&nbsp;&lt;area shape="circle" href="fruits/cherry.html" alt="cherry" coords="75,155,17"&gt;<br>
+                                    &nbsp;&nbsp;&lt;area shape="circle" href="fruits/apple.html" alt="apple" coords="146,148,40"&gt;<br>
+                                &lt;/map&gt;<br>
+                            </code>
+                        </td>
+                        <td rowspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;area&gt;</code></td>
+                        <td>
+                            <a href="attribute/attr_shape.html">shape</a>, coords, href, alt
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;link&gt;</code></td>
+                        <td>
+                            <a href="attribute/attr_rel.html">rel</a>, href
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;title&gt;</code></td>
+                        <td>NONE</code></td>
+                        <td></td>
+                        <td>Define the title of the document</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</code></td>
+                        <td>rowspan, colspan, same as <code>&lt;p&gt;</td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <th>One</th>
+                                    <th>Two</th>
+                                    <th>Three</th>    
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                </tr>
+                            </table>
+                            <code>
+                                &lt;table&gt;<br>
+                                &nbsp;&nbsp;&lt;tr&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;One&lt;/th&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Two&lt;/th&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Three&lt;/th&gt;<br>
+                                &nbsp;&nbsp;&lt;/tr&gt;<br>
+                                &nbsp;&nbsp;&lt;tr&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;1&lt;/td&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;2&lt;/td&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;3&lt;/td&gt;<br>
+                                &nbsp;&nbsp;&lt;/tr&gt;<br>
+                                &lt;/table&gt;<br>
+                            </code>
+                        </td>
+                        <td>
+                            <a href="use_element/table.html">Use Table</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>&lt;ul&gt;, &lt;ol&gt;, &lt;dl&gt;</code>
+                        </td>
+                        <td>each has different attribute</td>
+                        <td>
+                            <ol>
+                                <li>I am one</li>
+                                <li>I am two</li>
+                                <li>I am three</li>
+                            </ol>
+                            <code>
+                                &lt;li&gt;I am one&lt;/li&gt;
+                                &lt;li&gt;I am two&lt;/li&gt;
+                                &lt;li&gt;I am three&lt;/li&gt;
+                            </code>
+                        </td>
+                        <td>
+                            <a href="use_element/list.html">Use List</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;div&gt;</code></td>
+                        <td rowspan="2">style, class, id</td>
+                        <td>
+                            <div style="background-color: brown; color: white; padding: 10px">
+                                <h3>Apple</h3>
+                                <p>This is an apple</p>
+                            </div>
+                            <code>
+                                &lt;div style="background-color: brown; color: white; padding: 10px"&gt;
+                                    &lt;h3&gt;Apple&lt;/h3&gt;
+                                    &lt;p&gt;This is an apple&lt;/p&gt;
+                                &lt;/div&gt;
+                            </code>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;span&gt;</code></td>
+                        <td>
+                            This is an <span style="background-color: blue; color: greenyellow; font-family: Impact;">apple</span>.<br>
+                            <code>
+                                This is an &lt;span style="background-color: blue; color: greenyellow; font-family: Impact;"&gt;apple&lt;/span&gt;.
+                            </code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;iframe&gt;</code></td>
+                        <td>name, like <code>&lt;img&gt;</code></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
         
-        <h2 id="CSS">CSS</h2>
-        <p>CSS can be added to HTML in 3 different ways:</p>
-        <li>
-            <b>Inline</b> - using style attribute
-        </li>
-        <li>
-            <b>Internal</b> - using <code>&lt;style&gt;</code> in <code>&lt;head&gt;</code>
-        </li>
-        <li>
-            <b>External</b> - using <code>&lt;link&gt;</code> to link to an external CSS file
-        </li>
-
-        <h3>Different way to use link</h3>
-        <h4>Change the color of links</h4>
-        <p>Link has 4 different states:</p>
-        <ul>
-            <li>
-                <b>a:link</b> - unvisited link
-            </li>
-            <li>
-                <b>a:visited</b> - visited link
-            </li>
-            <li>
-                <b>a:hover</b> - when mouse point to the link
-            </li>
-            <li>
-                <b>a:active</b> - active link
-            </li>
-        </ul>
-
-        <h4>Change link to a button</h4>
-        <p>We can have the below button by using code:</p>
-        <code>
-            a:link, a:visited {<br>
-                background-color: red;<br>
-                color: white;<br>
-                padding: 15px 25px;<br>
-                text-align: center;<br>
-                text-decoration: none;<br>
-                display: inline-block;<br>
-            }<br>
-            a:hover, a:active {<br>
-                background-color: pink;<br>
-            }
-        </code>
+        <div>
+            <h2 id="CSS">CSS</h2>
+            <div>
+                <p>CSS can be added to HTML in 3 different ways:</p>
+                <li>
+                    <b>Inline</b> - using style attribute
+                </li>
+                <li>
+                    <b>Internal</b> - using <code>&lt;style&gt;</code> in <code>&lt;head&gt;</code>
+                </li>
+                <li>
+                    <b>External</b> - using <code>&lt;link&gt;</code> to link to an external CSS file
+                </li>
+            </div>
+            <div>
+                <h3>Different way to use link</h3>
+                <div>
+                    <h4>Change the color of links</h4>
+                    <p>Link has 4 different states:</p>
+                    <ul>
+                        <li>
+                            <b>a:link</b> - unvisited link
+                        </li>
+                        <li>
+                            <b>a:visited</b> - visited link
+                        </li>
+                        <li>
+                            <b>a:hover</b> - when mouse point to the link
+                        </li>
+                        <li>
+                            <b>a:active</b> - active link
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Change link to a button</h4>
+                    <p>We can have the below button by using code:</p>
+                    <code>
+                        a:link, a:visited {<br>
+                            background-color: red;<br>
+                            color: white;<br>
+                            padding: 15px 25px;<br>
+                            text-align: center;<br>
+                            text-decoration: none;<br>
+                            display: inline-block;<br>
+                        }<br>
+                        a:hover, a:active {<br>
+                            background-color: pink;<br>
+                        }
+                    </code>
+                </div>
+                <div>
+                    <h3>class and id</h3>
+                    <p>class tutorial: <a href="attribute/attr_class.html">Click here</a></p>
+                    <p>id tutorial: <a href="attribute/attr_id.html">Click here</a></p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
